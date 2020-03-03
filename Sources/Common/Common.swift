@@ -7,9 +7,6 @@ public class Common {
     
     func getImage() -> UIImage? {
         let bundle = Bundle(for: type(of: self))
-        guard let image = UIImage(named: "test", in: bundle, compatibleWith: nil) else {
-            return nil
-        }
-        return image
+        return UIImage(named: "test", in: bundle, compatibleWith: nil)
     }
 }
