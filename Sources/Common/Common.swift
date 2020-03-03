@@ -5,7 +5,7 @@ public class Common {
     
     public init() {}
     
-    func getImage() -> UIImage? {
+    public func getImage() -> UIImage? {
         let bundle = Bundle(for: type(of: self))
         return UIImage(named: "test", in: bundle, compatibleWith: nil)
     }
